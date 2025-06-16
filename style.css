@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.column {
+  flex: 1;
+  min-width: 250px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+.column h2 {
+  text-align: center;
+}
+.task {
+  background: white;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: grab;
+  position: relative;
+  border-left: 5px solid #ccc;
+}
+.task:active {
+  cursor: grabbing;
+}
+.task .delete-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.task .edit-btn {
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  background: #4444ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.task .deadline {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+.priority-low {
+  border-left-color: #4caf50;
+}
+.priority-medium {
+  border-left-color: #ffa726;
+}
+.priority-high {
+  border-left-color: #ef5350;
+}
+#new-task-form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+.form-group label {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+.form-group input,
+.form-group select {
+  padding: 5px;
+  font-size: 14px;
+  border:none;
+  background-color: #c4dae3;
+  color: black;
+  border-radius: 6px;
+}
+.addTask-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
